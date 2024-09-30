@@ -1,0 +1,39 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.product{
+    position: absolute;
+    /* background-color: red; */
+    width: 500px;
+    height: 500px;
+    bottom: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    transition: 0.7s;
+    --left:-395px;
+}
+.soda{
+    background: var(--img) var(--left) 0  ,
+    url(freepik-export-20240928085423Xpeu.png);
+    background-size: auto 100%;
+    width:280px;
+    aspect-ratio:2/4;
+    background-blend-mode:multiply;
+    mask-image: url(freepik-export-20240928085423Xpeu.png);
+    mask-size: auto 100%;
+    transition: 0.7s;
+
+}
+.soda:hover{
+    --left:-1130px;
+    transform: translateY(-120px);
+}
